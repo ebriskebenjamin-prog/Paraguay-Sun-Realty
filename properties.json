@@ -11,7 +11,7 @@
     "bedrooms": 2,
     "bathrooms": 2,
     "sizeM2": 78,
-    "image": "images/asuncion-sky-residences-2.webp",
+    "image": "https://rjvybzirhlmhpalqottc.supabase.co/storage/v1/object/public/properties2/luque-garden-villas/images:asuncion-sky-residences-2.webp.webp",
     "images": [
       "images/asuncion-sky-residences-2.webp",
       "images/asuncion-sky-residences-3.webp",
