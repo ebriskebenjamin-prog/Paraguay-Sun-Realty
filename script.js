@@ -1,3 +1,15 @@
+// -----------------------------
+// Supabase Config
+// -----------------------------
+const SUPABASE_URL = "https://rjvybzirhlmhpalqottc.supabase.co";
+const BUCKET = "properties2";
+
+function getImageUrl(propertyId, imageName) {
+  return `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${propertyId}/${imageName}`;
+}
+
+const FALLBACK_IMAGE = "images/fallback.jpg";
+
 document.addEventListener("DOMContentLoaded", () => {
   let currentLang = "en";
   const yearEl = document.getElementById("year");
@@ -670,17 +682,18 @@ document.addEventListener("DOMContentLoaded", () => {
             if (Number.isFinite(property.bathrooms) && property.bathrooms > 0) metaParts.push(`${property.bathrooms} ba`);
             if (Number.isFinite(property.sizeM2) && property.sizeM2 > 0) metaParts.push(`${property.sizeM2} m²`);
 
-            const gallery = Array.isArray(property.images) && property.images.length
-              ? property.images.slice(0, 20)
-              : [];
-            const coverImage = property.image || gallery[0] || "";
+            const hasSupabaseImages = Array.isArray(property.images) && property.images.length > 0;
+            const coverImage = hasSupabaseImages
+              ? getImageUrl(property.id, property.images[0])
+              : (property.image || "");
+            const finalCoverImage = coverImage || FALLBACK_IMAGE;
 
             const imageHtml = `
-              <div class="card-image ${coverImage ? "" : "is-placeholder"}">
+              <div class="card-image ${finalCoverImage ? "" : "is-placeholder"}">
                 ${badgesHtml}
                 ${
-                  coverImage
-                    ? `<img src="${coverImage}" alt="${title}"/>`
+                  finalCoverImage
+                    ? `<img src="${finalCoverImage}" alt="${title}"/>`
                     : `<div class="card-image-placeholder">Photo coming soon</div>`
                 }
               </div>
@@ -794,12 +807,15 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
           }
 
-          const gallery = Array.isArray(property.images) && property.images.length
+          const imageNames = Array.isArray(property.images) && property.images.length
             ? property.images.slice(0, 20)
-            : (property.image ? [property.image] : []);
+            : [];
+          const gallery = imageNames.length > 0
+            ? imageNames.map((name) => getImageUrl(property.id, name))
+            : (property.image ? [property.image] : [FALLBACK_IMAGE]);
 
           const hasGallery = gallery.length > 0;
-          const mainImage = hasGallery ? gallery[0] : "";
+          const mainImage = gallery[0];
 
           const imageSection = hasGallery
             ? `
