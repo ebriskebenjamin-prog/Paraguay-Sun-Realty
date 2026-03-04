@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paraguay Sun Realty - Property Details</title>
+    <meta
+      name="description"
+      content="View full details for a Paraguay property listing from Paraguay Sun Realty."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Paraguay Sun Realty Logo" class="logo-img" />
+            Paraguay<span>Sun Realty</span>
+          </a>
+        </div>
+        <nav class="nav">
+          <a href="index.html#home" data-i18n="nav.home">Home</a>
+          <a href="index.html#about" data-i18n="nav.about">About</a>
+          <a href="properties.html" data-i18n="nav.properties">Properties</a>
+          <a href="blog.html#latest" data-i18n="nav.why">Blog</a>
+          <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="nav-toggle-icon">☰</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section-alt property-page">
+        <div class="container section-header" style="margin-bottom: 1.8rem;">
+          <p class="eyebrow" data-i18n="property.eyebrow">Property Details</p>
+          <h2 data-i18n="property.title">Discover Your New Home</h2>
+        </div>
+
+        <div class="container">
+          <div class="property-shell" id="property-detail"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Paraguay Sun Realty &mdash; Real Estate in Paraguay</p>
+        <p class="footer-meta">&copy; <span id="year"></span> Paraguay Sun Realty. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="lang-switch" aria-label="Language selector">
+      <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+        <span class="lang-toggle-icon">🌐</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <button class="lang-option" data-lang="en" type="button">English</button>
+        <button class="lang-option" data-lang="de" type="button">Deutsch</button>
+        <button class="lang-option" data-lang="es" type="button">Español</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+

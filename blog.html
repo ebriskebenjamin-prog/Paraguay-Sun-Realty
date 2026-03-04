@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paraguay Sun Realty - Blog</title>
+    <meta
+      name="description"
+      content="Insights, guides and news from Paraguay Sun Realty about buying property and living in Paraguay."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Paraguay Sun Realty Logo" class="logo-img" />
+            Paraguay<span>Sun Realty</span>
+          </a>
+        </div>
+        <nav class="nav">
+          <a href="index.html#home" data-i18n="nav.home">Home</a>
+          <a href="index.html#about" data-i18n="nav.about">About</a>
+          <a href="properties.html" data-i18n="nav.properties">Properties</a>
+          <a href="blog.html#latest" data-i18n="nav.why">Blog</a>
+          <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="nav-toggle-icon">☰</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow" data-i18n="blog.eyebrow">Paraguay Sun Realty Blog</p>
+            <h1 data-i18n="blog.title">Insights on Real Estate in Paraguay</h1>
+            <p class="subtitle" data-i18n="blog.lead">
+              Read guides, market updates, and practical tips for buying property and starting a new life in Paraguay.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="latest" class="section">
+        <div class="container section-header">
+          <p class="eyebrow" data-i18n="blog.latestEyebrow">Latest articles</p>
+          <h2 data-i18n="blog.latestTitle">From the Paraguay Sun Realty team</h2>
+          <p class="lead" data-i18n="blog.latestLead">
+            New content will appear here as you publish articles about areas, neighborhoods, buying steps, and lifestyle
+            in Paraguay.
+          </p>
+        </div>
+
+        <div class="container cards-grid">
+          <article class="card">
+            <a class="card-link" href="blog-post.html?slug=first-steps-paraguay">
+              <div class="card-body">
+                <p class="eyebrow" data-i18n="blog.sample1.eyebrow">Guide</p>
+                <h3 data-i18n="blog.sample1.title">First steps to buying property in Paraguay</h3>
+                <p class="muted" data-i18n="blog.sample1.excerpt">
+                  An overview of the buying process, from first contact to signing at the notary — ideal as your first
+                  article to welcome new clients.
+                </p>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a class="card-link" href="blog-post.html?slug=living-in-paraguay-cities">
+              <div class="card-body">
+                <p class="eyebrow" data-i18n="blog.sample2.eyebrow">Lifestyle</p>
+                <h3 data-i18n="blog.sample2.title">Living in Asunción, Encarnación and beyond</h3>
+                <p class="muted" data-i18n="blog.sample2.excerpt">
+                  A space to explain different regions, neighborhoods, and what everyday life feels like in Paraguay’s
+                  key cities.
+                </p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p data-i18n="footer.text">Paraguay Sun Realty &mdash; Real Estate in Paraguay</p>
+        <p class="footer-meta">&copy; <span id="year"></span> Paraguay Sun Realty. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="lang-switch" aria-label="Language selector">
+      <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+        <span class="lang-toggle-icon">🌐</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <button class="lang-option" data-lang="en" type="button">English</button>
+        <button class="lang-option" data-lang="de" type="button">Deutsch</button>
+        <button class="lang-option" data-lang="es" type="button">Español</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+

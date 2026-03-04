@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paraguay Sun Realty - Real Estate in Paraguay</title>
+    <meta
+      name="description"
+      content="Paraguay Sun Realty is a full-service real estate agency in Paraguay, offering homes, apartments, land, and investment opportunities with end-to-end support."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Paraguay Sun Realty Logo" class="logo-img" />
+            Paraguay<span>Sun Realty</span>
+          </a>
+        </div>
+        <nav class="nav">
+          <a href="#home" data-i18n="nav.home">Home</a>
+          <a href="#about" data-i18n="nav.about">About Us</a>
+          <a href="properties.html" data-i18n="nav.properties">Properties</a>
+          <a href="blog.html" data-i18n="nav.why">Blog</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span class="nav-toggle-icon">☰</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero / Home -->
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Paraguay Real Estate</p>
+            <h1 data-i18n="hero.title">Find Your Place in Paraguay</h1>
+            <p class="subtitle" data-i18n="hero.subtitle">
+              Homes, apartments, and land across Paraguay — carefully selected,and supported from first viewing to final signature.
+Whether you're relocating, investing, or buying your forever home, we guide you with local expertise and complete transparency.
+            </p>
+            <div class="hero-actions">
+              <a href="properties.html" class="btn primary" data-i18n="hero.ctaExplore">Explore Properties</a>
+              <a href="#contact" class="btn ghost" data-i18n="hero.ctaContact">Get in Touch</a>
+            </div>
+            <p class="supporting">
+              We help you with every step of your property purchase and relocation journey.
+            </p>
+          </div>
+          <div class="hero-panel">
+            <div class="hero-card">
+              <h2 data-i18n="hero.cardTitle">Ready to Secure the Right Property?</h2>
+              <p data-i18n="hero.cardText">
+                Contact us today and let our experts guide you through your property investment journey.<p data-i18n="about.title"> Feel free to reach out for more information</p>
+              </p>
+              <a href="#contact" class="btn full-width" data-i18n="hero.cardButton">Talk to an Expert</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container section-header">
+          <p class="eyebrow" data-i18n="about.eyebrow">About Paraguay Sun Realty</p>
+          <h2 data-i18n="about.title">Your Real Estate Partner in Paraguay</h2>
+          <p class="lead" data-i18n="about.lead">
+            Paraguay Sun Realty helps buyers and investors find the right property in Paraguay &mdash; from modern
+            apartments and family homes to second-hand opportunities and land for development.
+          </p>
+        </div>
+        <div class="container two-column">
+          <div>
+            <h3 data-i18n="about.conceptTitle">Our Concept</h3>
+            <p data-i18n="about.conceptText">
+              Understand the concept behind Paraguay Sun Realty. We focus on quality listings, clear guidance, and
+              a smooth buying experience backed by local market knowledge.
+            </p>
+            <ul class="check-list">
+              <li data-i18n="about.bullet1">Homes, apartments, and land across Paraguay</li>
+              <li data-i18n="about.bullet2">New builds, second-hand homes, and land opportunities</li>
+              <li data-i18n="about.bullet3">Local guidance and end-to-end support</li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-i18n="about.drivesTitle">What Drives Us</h3>
+            <p data-i18n="about.drivesText">
+              Our mission is to make it effortless to buy property in Paraguay with confidence. We stand for
+              transparency, local expertise, and long-term value for our clients.
+            </p>
+            <ul class="pill-list">
+              <li data-i18n="about.pill1">Freedom &amp; Lifestyle</li>
+              <li data-i18n="about.pill2">Trusted Partnerships</li>
+              <li data-i18n="about.pill3">End-to-End Support</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Properties -->
+      <section id="properties" class="section section-alt">
+        <div class="container section-header">
+          <p class="eyebrow" data-i18n="homeProperties.eyebrow">Our Properties</p>
+          <h2 data-i18n="homeProperties.title">Explore Listings Across Paraguay</h2>
+          <p class="lead" data-i18n="homeProperties.lead">
+            Explore a curated selection of properties in Paraguay. View details, compare features, and contact us to
+            schedule viewings or request the full portfolio.
+          </p>
+        </div>
+
+        <div class="container three-column" id="home-properties"></div>
+
+        <div class="container" style="margin-top: 1.8rem; text-align: center;">
+          <a href="properties.html" class="btn primary" data-i18n="homeProperties.ctaAll">See all Properties</a>
+        </div>
+
+      </section>
+
+      <!-- Benefits / Why Choose Us -->
+      <section id="benefits" class="section">
+        <div class="container section-header">
+          <p class="eyebrow" data-i18n="benefits.eyebrow">Why Choose Paraguay Sun Realty</p>
+          <h2 data-i18n="benefits.title">Complete Support for Your New Life</h2>
+          <p class="lead" data-i18n="benefits.lead">
+            We guide you through every step of buying property in Paraguay, and we can support your immigration journey
+            at an additional cost if needed.
+          </p>
+        </div>
+
+        <div class="container three-column">
+          <article class="card">
+            <h3 data-i18n="benefits.card1.title">Free Property Buying Process</h3>
+            <p data-i18n="benefits.card1.text">
+              We don't charge any fees for the property buying process. You benefit from clear guidance and transparent
+              terms &mdash; from search and viewings to negotiation and closing.
+            </p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="benefits.card2.title">Immigration Assistance</h3>
+            <p data-i18n="benefits.card2.text">
+              Optional immigration support services are available for Paraguay at an additional cost, helping you with
+              residency, documentation, and relocation logistics.
+            </p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="benefits.card3.title">End-to-End Guidance</h3>
+            <p data-i18n="benefits.card3.text">
+              From initial discovery to handing over the keys, our specialists guide you at every step of your
+              property purchase and relocation journey.
+            </p>
+          </article>
+        </div>
+
+        <!-- Why Paraguay -->
+        <div class="container country-section">
+          <header class="country-header">
+            <h2 data-i18n="whyPy.title">Why Paraguay 🇵🇾</h2>
+            <p class="lead" data-i18n="whyPy.lead">
+              Discover the Land of Freedom and Sunshine &mdash; your gateway to affordable luxury living.
+            </p>
+          </header>
+          <div class="three-column">
+            <article class="card">
+              <h3 data-i18n="whyPy.card1.title">Affordable Luxury</h3>
+              <p data-i18n="whyPy.card1.text">
+                Great value across Paraguay &mdash; from modern apartments to spacious homes and land with strong
+                long-term potential.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="whyPy.card2.title">Freedom &amp; Privacy</h3>
+              <p data-i18n="whyPy.card2.text">
+                One of the world's most freedom-friendly countries with low taxes, minimal regulations, and
+                strong property rights.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="whyPy.card3.title">Endless Sunshine</h3>
+              <p data-i18n="whyPy.card3.text">
+                Over 300 days of sunshine per year with a warm, comfortable climate ideal for outdoor living
+                year-round.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="whyPy.card4.title">Growing Economy</h3>
+              <p data-i18n="whyPy.card4.text">
+                One of South America's fastest-growing economies with stable currency and excellent investment
+                opportunities.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="whyPy.card5.title">Easy Residency</h3>
+              <p data-i18n="whyPy.card5.text">
+                One of the easiest permanent residency programs in the world, accessible to investors and
+                retirees.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="whyPy.card6.title">Quality of Life</h3>
+              <p data-i18n="whyPy.card6.text">
+                Low cost of living, friendly locals, safe neighborhoods, and a relaxed lifestyle with modern
+                infrastructure.
+              </p>
+            </article>
+          </div>
+       
+        </div>
+
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section section-alt">
+        <div class="container section-header">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 data-i18n="contact.title">Get in Touch</h2>
+          <p class="lead" data-i18n="contact.lead">
+            Ready to find your perfect property? Contact us today and let our experts guide you through your
+            property investment journey.
+          </p>
+        </div>
+
+        <div class="container contact-grid">
+          <div class="contact-details">
+            <h3 data-i18n="contact.infoTitle">Contact Information</h3>
+            <dl>
+              <div>
+                <dt data-i18n="contact.emailLabel">Email</dt>
+                <dd><a href="mailto:info@paraguaysunrealty.com">info@paraguaysunrealty.com</a></dd>
+              </div>
+              <div>
+                <dt data-i18n="contact.phoneLabel">Phone</dt>
+                <dd data-i18n="contact.phoneNote">Call or WhatsApp</dd>
+                <dd><a href="tel:+595123456789">+595 123 456 789</a></dd>
+              </div>
+              <div>
+                <dt data-i18n="contact.officeLabel">Office</dt>
+                <dd>Asunción, Paraguay</dd>
+              </div>
+              <div>
+                <dt data-i18n="contact.whatsAppLabel">WhatsApp</dt>
+                <dd>
+                  <a
+                    href="https://wa.me/+595123456789?text=Hello!%20I%20would%20like%20to%20learn%20more%20about%20your%20properties."
+                    target="_blank"
+                    rel="noreferrer"
+                    data-i18n="contact.whatsAppLink"
+                    >Chat on WhatsApp</a
+                  >
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <form class="contact-form" action="#" method="post">
+            <h3 data-i18n="contact.formTitle">Send Us a Message</h3>
+            <div class="field">
+              <label for="name" data-i18n="contact.form.nameLabel">Your Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Enter your full name"
+                data-i18n="contact.form.namePlaceholder"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="email" data-i18n="contact.form.emailLabel">Your Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="name@example.com"
+                data-i18n="contact.form.emailPlaceholder"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="phone" data-i18n="contact.form.phoneLabel">Your Phone Number</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="Include country code (e.g. +49...)"
+                data-i18n="contact.form.phonePlaceholder"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="budget" data-i18n="contact.form.budgetLabel">Desired Budget</label>
+              <select id="budget" name="budget" required>
+                <option value="" data-i18n="contact.form.budgetPlaceholder">Select your budget</option>
+                <option value="0-50000" data-i18n="contact.form.budgetOption1">0-50,000 $</option>
+                <option value="50000-100000" data-i18n="contact.form.budgetOption2">50,000-100,000 $</option>
+                <option value="100000-200000" data-i18n="contact.form.budgetOption3">100,000-200,000 $</option>
+                <option value="200000-300000" data-i18n="contact.form.budgetOption4">200,000-300,000 $</option>
+                <option value="300000-plus" data-i18n="contact.form.budgetOption5">300,000+ $</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message" data-i18n="contact.form.messageLabel">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell us what you are looking for..."
+                data-i18n="contact.form.messagePlaceholder"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn full-width" data-i18n="contact.form.submit">Send Message</button>
+            <p class="form-note" data-i18n="contact.form.note">
+              This form is for demonstration only and does not send data. Connect it to your preferred CRM or
+              email service to start receiving enquiries.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p data-i18n="footer.text">Paraguay Sun Realty &mdash; Real Estate in Paraguay</p>
+        <p class="footer-meta">&copy; <span id="year"></span> Paraguay Sun Realty. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="lang-switch" aria-label="Language selector">
+      <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+        <span class="lang-toggle-icon">🌐</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <button class="lang-option" data-lang="en" type="button">English</button>
+        <button class="lang-option" data-lang="de" type="button">Deutsch</button>
+        <button class="lang-option" data-lang="es" type="button">Español</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>

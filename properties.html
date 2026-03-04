@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paraguay Sun Realty - Properties</title>
+    <meta
+      name="description"
+      content="Browse Paraguay Sun Realty listings in Paraguay. Filter by price, bedrooms, bathrooms, area, property type, and size."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Paraguay Sun Realty Logo" class="logo-img" />
+            Paraguay<span>Sun Realty</span>
+          </a>
+        </div>
+        <nav class="nav">
+          <a href="index.html#home" data-i18n="nav.home">Home</a>
+          <a href="index.html#about" data-i18n="nav.about">About</a>
+          <a href="properties.html" data-i18n="nav.properties">Properties</a>
+          <a href="blog.html#latest" data-i18n="nav.why">Blog</a>
+          <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="nav-toggle-icon">☰</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section-alt properties-page">
+        <div class="container section-header properties-hero">
+          <p class="eyebrow" data-i18n="properties.eyebrow">Our Properties</p>
+          <h2 data-i18n="properties.title">Search Properties in Paraguay</h2>
+          <p class="lead" data-i18n="properties.lead">
+            Use filters to find the right home, apartment, or land opportunity. Click any listing to view full
+            details.
+          </p>
+        </div>
+
+        <div class="container filters" aria-label="Property filters">
+          <div class="filter-group">
+            <label for="filter-area">Area</label>
+            <select id="filter-area">
+              <option value="">All Areas</option>
+              <option value="Asuncion">Asunción</option>
+              <option value="Guaira">Guairá</option>
+              <option value="Ciudad del Este">Ciudad del Este</option>
+              <option value="Encarnacion">Encarnación</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-type">Property type</label>
+            <select id="filter-type">
+              <option value="">All Types</option>
+              <option value="New Build">New Build</option>
+              <option value="House">House</option>
+              <option value="Apartment">Apartment</option>
+              <option value="Land">Land</option>
+              <option value="Luxury">Luxury</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-min-price">Min price (USD)</label>
+            <input id="filter-min-price" type="number" inputmode="numeric" placeholder="e.g. 50000" />
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-max-price">Max price (USD)</label>
+            <input id="filter-max-price" type="number" inputmode="numeric" placeholder="e.g. 200000" />
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-beds">Bedrooms</label>
+            <select id="filter-beds">
+              <option value="">Any</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+              <option value="4">4+</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-baths">Bathrooms</label>
+            <select id="filter-baths">
+              <option value="">Any</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-min-size">Min size (m²)</label>
+            <input id="filter-min-size" type="number" inputmode="numeric" placeholder="e.g. 60" />
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-max-size">Max size (m²)</label>
+            <input id="filter-max-size" type="number" inputmode="numeric" placeholder="e.g. 300" />
+          </div>
+
+          <div class="filters-actions">
+            <div class="results-count" id="results-count" aria-live="polite"></div>
+            <button class="btn small ghost" type="button" id="filters-reset">Clear filters</button>
+          </div>
+        </div>
+
+        <div class="container three-column" id="all-properties"></div>
+        <div class="container notice" id="no-results" style="display: none; margin-top: 1.2rem;">
+          <strong>No properties found matching your filters.</strong>
+          <p>Try adjusting your filters or contact us to request the full portfolio.</p>
+          <a href="index.html#contact" class="btn ghost">Contact us</a>
+        </div>
+
+        <div class="container" style="margin-top: 2rem; text-align: center;">
+          <a href="index.html#contact" class="btn primary">Request Full Portfolio</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Paraguay Sun Realty &mdash; Real Estate in Paraguay</p>
+        <p class="footer-meta">&copy; <span id="year"></span> Paraguay Sun Realty. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="lang-switch" aria-label="Language selector">
+      <button class="lang-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+        <span class="lang-toggle-icon">🌐</span>
+      </button>
+      <div class="lang-menu" role="menu">
+        <button class="lang-option" data-lang="en" type="button">English</button>
+        <button class="lang-option" data-lang="de" type="button">Deutsch</button>
+        <button class="lang-option" data-lang="es" type="button">Español</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
