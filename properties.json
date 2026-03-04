@@ -1,5 +1,5 @@
 [
-  const SUPABASE_URL = "https://rjvybzirhlmhpalqottc.supabase.co";
+   { const SUPABASE_URL = "https://rjvybzirhlmhpalqottc.supabase.co";
 const BUCKET = "properties2";
 
 function getImageUrl(propertyId, imageName) {
