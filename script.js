@@ -11,6 +11,7 @@ const propertyFolderMap = {
   "guaira-country-plot": "guaira-lot-folder",
   "encarnacion-family-home": "encarnacion-home-folder",
   "ciudad-del-este-luxury-penthouse": "cde-penthouse-folder",
+  "barrio-cerrado-wiesental",
   // Add future properties here:
   // "property-id": "supabase-folder-name",
 };
