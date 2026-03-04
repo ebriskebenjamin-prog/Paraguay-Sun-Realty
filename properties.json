@@ -1,4 +1,10 @@
 [
+  const SUPABASE_URL = "https://rjvybzirhlmhpalqottc.supabase.co";
+const BUCKET = "properties2";
+
+function getImageUrl(propertyId, imageName) {
+  return `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${propertyId}/${imageName}`;
+}
   {
     "id": "asuncion-sky-residences",
     "title": "Barrio cerrado Wiesental",
@@ -12,13 +18,8 @@
     "bathrooms": 2,
     "sizeM2": 78,
     "image": "https://rjvybzirhlmhpalqottc.supabase.co/storage/v1/object/public/properties2/luque-garden-villas/images:asuncion-sky-residences-2.webp.webp",
-    "images": [
-      "https://rjvybzirhlmhpalqottc.supabase.co/storage/v1/object/public/properties2/luque-garden-villas/images:asuncion-sky-residences-3.webp.webp",
-      "https://rjvybzirhlmhpalqottc.supabase.co/storage/v1/object/public/properties2/luque-garden-villas/IMG_8567.webp",
-      "https://rjvybzirhlmhpalqottc.supabase.co/storage/v1/object/public/properties2/luque-garden-villas/IMG_8568.webp",
-      "https://rjvybzirhlmhpalqottc.supabase.co/storage/v1/object/public/properties2/luque-garden-villas/IMG_8569.webp",
-      "https://rjvybzirhlmhpalqottc.supabase.co/storage/v1/object/public/properties2/luque-garden-villas/IMG_8570.webp",
-      "https://rjvybzirhlmhpalqottc.supabase.co/storage/v1/object/public/properties2/luque-garden-villas/IMG_8571.webp"
+    "images": ["1.webp", "2.webp", "3.webp"]
+   
   
     ],
     "videoUrl": "https://www.youtube.com/shorts/8ggKqXXqTWY",
