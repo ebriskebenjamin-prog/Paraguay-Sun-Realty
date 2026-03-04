@@ -31,7 +31,7 @@
     "bathrooms": 2,
     "sizeM2": 165,
     "image": "images/luque-garden-villas.jpg",
-    "images": [],
+    "images": ["1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp"],
     "videoUrl": "https://www.youtube.com/watch?v=i8a0oZViAU8",
     "shortDescription": "Gated community of contemporary townhouses close to the airport, with green spaces and family-friendly facilities.",
     "longDescription": "Contemporary townhouses in a gated community near Asunción airport. Landscaped gardens, playgrounds, and clubhouse designed for families and long-stay living.",
