@@ -4,8 +4,21 @@
 const SUPABASE_URL = "https://rjvybzirhlmhpalqottc.supabase.co";
 const BUCKET = "properties2";
 
+// Map property IDs to actual Supabase folder names
+const propertyFolderMap = {
+  "luque-garden-villas": "V-tower-riviera",
+  "asuncion-sky-residences": "asuncion-sky-folder",
+  "guaira-country-plot": "guaira-lot-folder",
+  "encarnacion-family-home": "encarnacion-home-folder",
+  "ciudad-del-este-luxury-penthouse": "cde-penthouse-folder",
+  // Add future properties here:
+  // "property-id": "supabase-folder-name",
+};
+
+// Function to generate full public URL for Supabase images
 function getImageUrl(propertyId, imageName) {
-  return `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${propertyId}/${imageName}`;
+  const folder = propertyFolderMap[propertyId] || propertyId;
+  return `${SUPABASE_URL}/storage/v1/object/public/${BUCKET}/${folder}/${imageName}`;
 }
 
 const FALLBACK_IMAGE = "images/fallback.jpg";
