@@ -5,9 +5,13 @@ const SUPABASE_URL = "https://rjvybzirhlmhpalqottc.supabase.co";
 const BUCKET = "properties2";
 
 // Map property IDs to actual Supabase folder names
-const propertyFolderMap = {};
-  // Add future properties here:
-  // "property-id": "supabase-folder-name",
+const propertyFolderMap = {
+  "luque-garden-villas": "V-tower-riviera",
+  "asuncion-sky-residences": "asuncion-sky-folder",
+  "guaira-country-plot": "guaira-lot-folder",
+  "encarnacion-family-home": "encarnacion-home-folder",
+  "ciudad-del-este-luxury-penthouse": "cde-penthouse-folder",
+  "barrio-cerrado-wiesental",
 };
 
 // Function to generate full public URL for Supabase images
