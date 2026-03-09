@@ -5,13 +5,7 @@ const SUPABASE_URL = "https://rjvybzirhlmhpalqottc.supabase.co";
 const BUCKET = "properties2";
 
 // Map property IDs to actual Supabase folder names
-const propertyFolderMap = {
-  "luque-garden-villas": "V-tower-riviera",
-  "asuncion-sky-residences": "asuncion-sky-folder",
-  "guaira-country-plot": "guaira-lot-folder",
-  "encarnacion-family-home": "encarnacion-home-folder",
-  "ciudad-del-este-luxury-penthouse": "cde-penthouse-folder",
-  "barrio-cerrado-wiesental",
+const propertyFolderMap = {};
   // Add future properties here:
   // "property-id": "supabase-folder-name",
 };
@@ -958,9 +952,9 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         }
       })
-      .catch(() => {
-        // Fail silently if properties can't be loaded
-      });
+      .catch((err) => {
+  console.error("Property loading error:", err);
+});
   }
 });
 
